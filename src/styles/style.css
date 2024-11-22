@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    /*-ms-overflow-style: none;  !* IE and Edge *!*/
+    /*scrollbar-width: none;  !* Firefox *!*/
+    /*overflow-x: hidden;*/
+}
+
+:root {
+    color-scheme: light dark;
+    --font-family-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Oxygen, Ubuntu, Cantarell, "Open Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+code, pre {
+    font-family: var(--font-family-mono), monospace;
+}
+
+body {
+    background-color: light-dark(whitesmoke, #151515);
+    font-family: var(--font-family-body), sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+br {
+    user-select: none;
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size-adjust: 0.8;
+    }
+
+    #hero-img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 810px) {
+    body {
+        font-size-adjust: 0.5;
+    }
+
+    #hero-img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 809px) {
+    body {
+        font-size-adjust: 0.5;
+    }
+
+    #hero-img {
+        width: 50%;
+    }
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-header {
+    font-size: 5em;
+}
